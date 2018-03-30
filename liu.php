@@ -1,7 +1,7 @@
 <?php
 include("config.php");//配置文件
 if (empty($_POST['ly'])) {
-		echo "<script>alert('哼！你啥都没输入就访问这个页面，Ao娘要向主人投诉你的IP！(๑˙ー˙๑)');</script>";
+		echo "<script>alert('你啥都没输入就访问这个页面');</script>";
 		echo "<script type='text/javascript'>window.location.href='/'</script>";
 		}
 		//空表单禁止访问本页面

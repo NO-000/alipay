@@ -109,7 +109,6 @@ class guest_info{
 		file_put_contents($file, $az, FILE_APPEND | LOCK_EX);
 		//写入所有生成日志
 		$fileip = './log/log/'.$str.'ip.txt';
-		$yy=file_get_contents('https://sslapi.hitokoto.cn/?c=f&encode=text');
 	if (file_exists($fileip)) {
 		$as=file_get_contents($fileip);
 		} 
@@ -176,11 +175,6 @@ echo '<!DOCTYPE html>
 				<br/>
 				<div class="mui-content">
 					<div class="panel-body" style="text-align: center;">
-						<div class="well">
-							<font size="6px">
-						'.$yy.'
-							</font>
-						</div>
 						<ol class="breadcrumb">
 							<font size="2" color="#808080">&copy; 2017-2018 .All Rights Reserved. </font> 
 						</ol>

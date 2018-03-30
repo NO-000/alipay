@@ -4,7 +4,7 @@ include("config.php");//配置文件
     $json1="不存在的";
     $ao="不存在的";
     $aa="https://aoaoa.me";
-	echo "<script>alert('哼！你啥都没输入就访问这个页面，Ao娘要向主人投诉你的IP！(๑˙ー˙๑)');</script>";
+	echo "<script>alert('你啥都没输入就访问这个页面');</script>";
     echo "<script type='text/javascript'>window.location.href='/'</script>";
 	}//空表单禁止访问本页面
 else{
@@ -116,7 +116,8 @@ else
 	$apiUrl1='https://api.weibo.com/2/short_url/shorten.json?source=396543019&url_long='.$n.'?id='.$aa;
 		$response1 = file_get_contents($apiUrl1);
 $jsona = json_decode($response1,true);
-		$json1 = $jsona["urls"][0]["url_short"];
+		$json1 = $jsona["urls"][0]["url_short"];
+
 		//新浪短链接获取
 		}
 }
